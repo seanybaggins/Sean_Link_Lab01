@@ -9,27 +9,27 @@ CMD_SRCS += \
 ../hello_ccs.cmd 
 
 C_SRCS += \
-../hello.c \
+../ADC.c \
 ../startup_ccs.c 
 
 C_DEPS += \
-./hello.d \
+./ADC.d \
 ./startup_ccs.d 
 
 OBJS += \
-./hello.obj \
+./ADC.obj \
 ./startup_ccs.obj 
 
 OBJS__QUOTED += \
-"hello.obj" \
+"ADC.obj" \
 "startup_ccs.obj" 
 
 C_DEPS__QUOTED += \
-"hello.d" \
+"ADC.d" \
 "startup_ccs.d" 
 
 C_SRCS__QUOTED += \
-"../hello.c" \
+"../ADC.c" \
 "../startup_ccs.c" 
 
 

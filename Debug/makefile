@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./hello.obj" \
+"./ADC.obj" \
 "./startup_ccs.obj" \
 "./drivers/buttons.obj" \
 "./drivers/cfal96x64x16.obj" \
@@ -130,34 +130,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-Sean_Link_Lab02.out \
+Link_Hostetter_Lab3.out \
 
 EXE_OUTPUTS__QUOTED += \
-"Sean_Link_Lab02.out" \
+"Link_Hostetter_Lab3.out" \
 
 BIN_OUTPUTS += \
-Sean_Link_Lab02.bin \
+Link_Hostetter_Lab3.bin \
 
 BIN_OUTPUTS__QUOTED += \
-"Sean_Link_Lab02.bin" \
+"Link_Hostetter_Lab3.bin" \
 
 
 # All Target
-all: Sean_Link_Lab02.out
+all: Link_Hostetter_Lab3.out
 
 # Tool invocations
-Sean_Link_Lab02.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+Link_Hostetter_Lab3.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PGE --define=TARGET_IS_TM4C123_RB1 -g --c99 --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"hello_ccs.map" --heap_size=0 --stack_size=2048 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sean_Link_Lab02_linkInfo.xml" --rom_model -o "Sean_Link_Lab02.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PGE --define=TARGET_IS_TM4C123_RB1 -g --c99 --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"hello_ccs.map" --heap_size=0 --stack_size=2048 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Link_Hostetter_Lab3_linkInfo.xml" --rom_model -o "Link_Hostetter_Lab3.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
 
-Sean_Link_Lab02.bin: $(EXE_OUTPUTS)
+Link_Hostetter_Lab3.bin: $(EXE_OUTPUTS)
 	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo 'Invoking: ARM Hex Utility'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armhex"  -o "Sean_Link_Lab02.bin" $(EXE_OUTPUTS__QUOTED)
+	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armhex"  -o "Link_Hostetter_Lab3.bin" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -165,13 +165,13 @@ Sean_Link_Lab02.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "hello.obj" "startup_ccs.obj" "drivers\buttons.obj" "drivers\cfal96x64x16.obj" "utils\uartstdio.obj" 
-	-$(RM) "hello.d" "startup_ccs.d" "drivers\buttons.d" "drivers\cfal96x64x16.d" "utils\uartstdio.d" 
+	-$(RM) "ADC.obj" "startup_ccs.obj" "drivers\buttons.obj" "drivers\cfal96x64x16.obj" "utils\uartstdio.obj" 
+	-$(RM) "ADC.d" "startup_ccs.d" "drivers\buttons.d" "drivers\cfal96x64x16.d" "utils\uartstdio.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
 post-build:
-	-"C:/ti/ccsv7/utils/tiobj2bin/tiobj2bin" "Sean_Link_Lab02.out" "Sean_Link_Lab02.bin" "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armofd" "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armhex" "C:/ti/ccsv7/utils/tiobj2bin/mkhex4bin"
+	-"C:/ti/ccsv7/utils/tiobj2bin/tiobj2bin" "Link_Hostetter_Lab3.out" "Link_Hostetter_Lab3.bin" "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armofd" "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armhex" "C:/ti/ccsv7/utils/tiobj2bin/mkhex4bin"
 	-@echo ' '
 
 .PHONY: all clean dependents

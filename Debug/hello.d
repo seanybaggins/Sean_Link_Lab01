@@ -14,8 +14,6 @@ hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/debug.h
 hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/fpu.h
 hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/interrupt.h
 hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/uart.h
-hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/rom_map.h
-hello.obj: ../drivers/buttons.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/ctype.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/linkage.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/_isfuncdcl.h
@@ -23,6 +21,7 @@ hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/_isfuncdef.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdio.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdarg.h
 hello.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/string.h
+hello.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/adc.h
 
 ../hello.c: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdint.h: 
@@ -38,8 +37,6 @@ C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/debug.h:
 C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/fpu.h: 
 C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/interrupt.h: 
 C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/uart.h: 
-C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/rom_map.h: 
-../drivers/buttons.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/ctype.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/linkage.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/_isfuncdcl.h: 
@@ -47,3 +44,4 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/_isfuncdef.h:
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdio.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdarg.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/string.h: 
+C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/adc.h: 
